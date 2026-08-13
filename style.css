@@ -1,0 +1,178 @@
+/* Web Project CSS Design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+
+.hero {
+    background: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.hero p {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.hero button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background: #0056b3;
+}
+
+/* Features Section */
+
+.features {
+    background: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 20px;
+}
+
+.features img {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,.3);
+    margin-bottom: 25px;
+}
+
+.features p {
+    width: 80%;
+    margin: auto;
+}
+
+/* Article Section */
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.article-image img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,.3);
+}
+
+.article-text {
+    max-width: 600px;
+}
+
+.article-text h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h3 {
+    margin: 15px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero p,
+    .features p {
+        width: 95%;
+    }
+
+    .article {
+        flex-direction: column;
+        text-align: center;
+    }
+}
